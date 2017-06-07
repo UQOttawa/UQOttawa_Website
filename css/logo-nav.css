@@ -6,6 +6,10 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    background:url("../img/UQO.png") no-repeat center;
+    background-color: rgb(146,0,29);
+    background-size:1000px;
+    background-attachment:fixed;
 }
 
 .navbar-fixed-top .nav {
@@ -81,6 +85,7 @@ body {
 
 .card{
     padding: 10px;
+    background-color: rgba(255,255,255,0.5);
 }
 
 .card-img{
@@ -90,6 +95,10 @@ body {
 
 .card-info{
     text-align: center;
+}
+
+.card-info h3{
+    margin-top: 10px;
 }
 
 .brand{
