@@ -91,3 +91,11 @@ body {
 .card-info{
     text-align: center;
 }
+
+.brand{
+    padding: 5px 0;
+}
+
+.brand h1{
+    color:#BD9C00;
+}
