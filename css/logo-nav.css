@@ -54,12 +54,11 @@ body {
 
 .footer {
     padding: 20px 0;
-    background-color: grey;
-    position:absolute;
-    bottom:0;
-    left:0;
+    background-color: #BC8D2D;
     width:100%; 
     text-align:center;
+    border-color: black;
+    border-top: 1px solid;
 }
 
 .link{
@@ -70,9 +69,6 @@ body {
     color:white;
 }
 .copyright {
-    position:absolute;
-    bottom:0;
-    left:0;
     width:100%; 
     text-align:center;
     margin-top: 10px
@@ -107,11 +103,11 @@ body {
 }
 
 .brand{
-    padding: 1px 0;
+    float
 }
 
 .brand h1{
-    font-size: 50px;
+    font-size: 40px;
     color:white;
 }
 
@@ -123,4 +119,17 @@ body {
     color:white;
     font-size: 100px;
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content{
+    padding: 10px;
+    background-color: rgba(255,255,255,0.6);
+    text-align:center;
+}
+
+.content img{
+    width: 15%;
+    height:auto;
 }
