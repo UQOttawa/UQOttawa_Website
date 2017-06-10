@@ -103,10 +103,7 @@ body {
 }
 
 .brand{
-    float
-}
-
-.brand h1{
+    padding-left:10px;
     font-size: 40px;
     color:white;
 }
@@ -132,6 +129,11 @@ body {
 .content img{
     width: 15%;
     height:auto;
+}
+
+.school-card{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .school{
