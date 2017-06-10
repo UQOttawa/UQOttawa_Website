@@ -134,13 +134,18 @@ body {
     height:auto;
 }
 
-.school-card{
-    padding: 10px;
+.school{
+    padding: 5px;
     background-color: rgba(255,255,255,0.6);
     text-align: center;
+    max-width:100%;
+    width:250px;
+    border-radius: 5px;
 }
-.school{
-    width:80%;
-    height:auto;
+
+.header2{
+    padding-top: 50px;
     text-align: center;
+    margin-bottom: 40px;
+    color:white;
 }
