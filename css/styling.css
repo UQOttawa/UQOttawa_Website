@@ -1,19 +1,46 @@
-/*
- * Start Bootstrap - Logo Nav (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
 
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-    background:url("../img/UQO.png") no-repeat center;
-    background-color: rgb(146,0,29);
-    background-size:1000px;
-    background-attachment:fixed;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-header{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.text-header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(
+      rgba(000, 0, 0, 0.45), 
+      rgba(000, 0, 0, 0.45)
+    ), url(../img/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .navbar-fixed-top .nav {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .navbar-fixed-top .navbar-brand {
@@ -22,7 +49,7 @@ body {
 
 @media(min-width:768px) {
     body {
-        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+        padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -75,12 +102,9 @@ body {
 }
 
 .heading{
+	margin-top: 40px;
     text-align: center;
     margin-bottom: 40px;
-}
-
-.heading h1{
-    color:black;
 }
 
 .card{
@@ -144,11 +168,4 @@ body {
     max-width:100%;
     width:250px;
     border-radius: 5px;
-}
-
-.header2{
-    padding-top: 50px;
-    text-align: center;
-    margin-bottom: 40px;
-    color:white;
 }
