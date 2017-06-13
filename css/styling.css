@@ -92,6 +92,15 @@ body {
 .link:hover {
     color:white;
 }
+
+.link2{
+    color:#4A4A4A;
+}
+
+.link2:hover {
+    color: #92001D;
+}
+
 .copyright {
     width:100%; 
     text-align:center;
