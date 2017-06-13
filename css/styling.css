@@ -171,3 +171,10 @@ body {
     width:250px;
     border-radius: 5px;
 }
+
+.subcategory{
+	padding: 10px;
+    text-align:center;
+	color: black;
+
+}
