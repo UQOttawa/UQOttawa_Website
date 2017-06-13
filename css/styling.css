@@ -123,8 +123,13 @@ body {
     text-align: center;
 }
 
+.card-info h1{
+	color: black;
+}
+
 .card-info h3{
     margin-top: 10px;
+    color:black;
 }
 
 .brand{
