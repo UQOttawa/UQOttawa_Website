@@ -89,7 +89,7 @@
     </header>
 
     <!-- About -->
-    <section id="JDG" class="about">
+    <section id="JDG" class="JDG">
         <!-- Page Content -->
     <div class="container">
         <div class="col-lg-12">
@@ -448,7 +448,7 @@
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top
+                        scrollTop: target.offset().top - 71
                     }, 1000);
                     return false;
                 }
