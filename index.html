@@ -101,12 +101,12 @@
 			<div class ="row">
                 <div class="col-sm-4 col-sm-6">
                     <div class ="content">
-                    <img src="img/when.jpg">
+                        <img src="img/when.jpg">
                         <div class="heading">
                             <h2>When?</h2>
                         </div>
 						<p>January 3rd to 7th, 2018</p>
-						</div>
+					</div>
                 </div>
                 <div class="col-sm-4 col-sm-6">
                     <div class ="content">
@@ -115,20 +115,18 @@
                             <h2>Who?</h2>
                         </div>
 						<p>UQO + uOttawa = UQOttawa</p>
-						</div>
+					</div>
                 </div>
 				 <div class="col-sm-4 col-sm-6">
                     <div class ="content">
-                    <img src="img/where.png">
+                        <img src="img/where.png">
                         <div class="heading">
                             <h2>Where?</h2>
                         </div>
 						<p>University Laval, Quebec City</p>
-						</div>
+					</div>
                 </div>
             </div>
-			
-			
             <div class="row">
                 <div class ="content">
                     <img src="img/machine.png">
@@ -350,6 +348,9 @@
     <section id="delegation" class="delegation">
         <div class="container">
             <div class="row">
+                <div class="heading">
+                    <h1>Delegation</h1>
+                </div>
             </div>
             <!-- /.row -->
         </div>
@@ -360,6 +361,9 @@
     <section id="sponsors" class="sponsors bg-primary">
         <div class="container">
             <div class="row">
+                <div class="heading">
+                    <h1>Sponsors</h1>
+                </div>
             </div>
             <!-- /.row -->
         </div>
@@ -393,7 +397,7 @@
                         <!-- Column 2 -->
                         <div class="col-md-6 sm-margin-bottom-40">
                             <h2>Contact Us</h2>
-							<h3><strong>Isa Murray</strong>
+							<h3><strong>Tyler Metade</strong>
 							</h3>
 						<h4>Chef de délégation</h4>
 						<h4><i>Ottawa | Gatineau</i></h4>
@@ -422,17 +426,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
     $(function() {
         $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -447,51 +440,6 @@
             }
         });
     });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
     </script>
 
 </body>
