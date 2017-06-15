@@ -126,6 +126,8 @@ a.nav-selected{
     padding: 10px;
     background-color: rgba(255,255,255,0.6);
     margin-bottom:10px;
+    border-radius: 15px;
+
 }
 
 .card-img{
@@ -169,6 +171,8 @@ a.nav-selected{
     padding: 10px;
     background-color: rgba(255,255,255,0.6);
     text-align:center;
+    border-radius: 15px;
+
 }
 
 .content img{
