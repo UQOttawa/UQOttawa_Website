@@ -18,7 +18,7 @@ body {
 
 .text-header h1 {
     margin: 0;
-    padding: 0;
+    padding-top: 80px;
     font-size: 2.5em;
     font-weight: 700;
     color: #fff;
@@ -59,6 +59,8 @@ body {
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
+	
+
 }
 
 .logo-img {
@@ -136,8 +138,9 @@ a.nav-selected{
 }
 
 .card-info{
-    height: 200px;
+    height: 210px;
     text-align: center;
+	
 }
 
 .card-info h1{
@@ -172,6 +175,10 @@ a.nav-selected{
     background-color: rgba(255,255,255,0.6);
     text-align:center;
     border-radius: 15px;
+
+}
+.content p {
+		color: black;
 
 }
 
