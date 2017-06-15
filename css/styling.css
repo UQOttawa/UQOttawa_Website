@@ -12,14 +12,14 @@ body {
 .text-header{
     display: table-cell;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
     color: #fff;
 }
 
 .text-header h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
+    font-size: 2.5em;
     font-weight: 700;
     color: #fff;
 }
@@ -59,7 +59,7 @@ body {
 	width:auto;
 }
 
-.nav-selected{
+a.nav-selected{
     /*border-bottom: 2px solid #fff;*/
     padding-bottom: 1px;
     border-bottom-width: 1px;
