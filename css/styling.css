@@ -71,11 +71,12 @@ body {
 	}
 	
    .text-header h1 {
-	   padding-top: 72px;
+	   padding-top: 550px;
 		margin: 0;
 		font-size: 1.5em;
 		font-weight: 450;
 		color: #fff;
+		vertical-align: bottom;
 	}
 
 }
