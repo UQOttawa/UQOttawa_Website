@@ -66,12 +66,12 @@ body {
 	.text-header{
 		display: table-cell;
 		text-align: center;
-		vertical-align: bottom;
+		vertical-align: top;
 		color: #fff;
 	}
 	
    .text-header h1 {
-	   padding-bottom: 0px;
+	   padding-top: 72px;
 		margin: 0;
 		font-size: 1.5em;
 		font-weight: 450;
