@@ -18,7 +18,7 @@ body {
 
 .text-header h1 {
     margin: 0;
-    padding-top: 80px;
+    padding-top: 15px;
     font-size: 2.5em;
     font-weight: 700;
     color: #fff;
@@ -60,6 +60,16 @@ body {
         padding: 15px 0;
     }
 	
+
+}
+@media(max-width:768px) {
+   .text-header h1 {
+		margin: 0;
+		padding-top: 80px;
+		font-size: 2.5em;
+		font-weight: 700;
+		color: #fff;
+	}
 
 }
 
