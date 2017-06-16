@@ -36,9 +36,11 @@ body {
     -o-background-size: cover;
 }
 
-.brand h1{
-	color:	rgb(187, 142, 1);
-
+.logoTitle{
+	withMaxWidth {
+		width: 100%;
+		max-width: 500px;
+	}
 }
 .navbar-fixed-top .nav {
     padding: 10px 0;
