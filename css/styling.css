@@ -19,7 +19,8 @@ body {
 .text-header h1 {
     margin: 0;
     padding-top: 15px;
-    font-size: 2.5em;
+	padding-bottom: 15px;
+    font-size: 2 em;
     font-weight: 700;
     color: #fff;
 }
@@ -74,7 +75,8 @@ body {
 	}
 	
    .text-header h1 {
-	   padding-top: 72px;
+		padding-top: 10px;
+	   	padding-top: 72px;
 		margin: 0;
 		font-size: 1.5em;
 		font-weight: 450;
