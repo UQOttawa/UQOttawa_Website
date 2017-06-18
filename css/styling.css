@@ -199,13 +199,9 @@ a.nav-selected{
 }
 
 .card-info{
-    height: 210px;
+    height: 230px;
     text-align: center;
 	
-}
-
-.card-info-bottom{
-    height: 230px!important;	
 }
 
 .card-info h1{
