@@ -149,15 +149,16 @@ a.nav-selected{
 
 .footer {
     padding: 20px 0;
-    background-color: #BC8D2D;
+    background-color: #1c7398;
     width:100%; 
     text-align:center;
     border-color: black;
     border-top: 1px solid;
+	color: white;
 }
 
 .link{
-    color:#4A4A4A;
+    color: black;
 }
 
 .link:hover {
