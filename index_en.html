@@ -29,14 +29,17 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script type="text/javascript" src="js/scrolling.js"></script>
 
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="nav">
         <a class="navbar-lang-icon" href="index.html">
-            <img class="lang-img" src="img/en.png" alt="">
+            <img class="lang-img" src="img/fr.png" alt="">
         </a>
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,33 +51,34 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div class="brand">
-                    <h1>UQOttawa</h1>
+					<img class="logoTitle" src="img/uqott_title.png" height="28" width="190"></img>
                 </div>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#top" class="nav-selected">Home</a>
+                        <a href="#top" >Home</a>
+                    </li>
+                    <li class ="dropdown">
+                        <a href="#JDG" class="dropbtn">Eng Games</a>
+                        <div class="dropdown-content">
+                            <a href="#competitions">Competitions</a>
+                            <a href="#schoolsec">Participating universities</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#exec">Our Team</a>
+                        <div class="dropdown-content">
+                            <a href="#exec">Executive Committee</a>
+                            <a href="#delegation">Our delegation</a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#JDG">Eng Games</a>
-                    </li>
-					<li>
-                        <a href="#competitions">Competitions</a>
-                    </li>
-                    <li>
-                        <a href="#exec">Executives</a>
-                    </li>
-                    <li>
-                        <a href="#delegation">Delegation</a>
-                    </li>
-					
-                    <li>
-                        <a href="#partenaires">Sponsors</a>
+                        <a href="#sponsors">Sponsors</a>
                     </li>
 					 <li>
-                        <a href="#contacts">Contact Us</a>
+                        <a href="#contacts">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -86,7 +90,8 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-header">
-            <h1>Welcome</h1>
+            <h1><i>Do you want to sponsor us? <a href="#sponsors">Click here!</a></i></h1>
+			<img class="background-image" src="img/uqott_white.png" ></img>
             <br></br>
         </div>
     </header>
@@ -97,12 +102,13 @@
     <div class="container">
         <div class="col-lg-12">
             <div class="heading">
-                <h1>Quebec Engineering Games</h1>
+                <h1>The Engineering Games</h1>
             </div>
             <div class="row">
                 <div class ="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis euismod odio, sit amet mollis turpis molestie in. Proin convallis risus vel metus facilisis, nec pharetra leo scelerisque. Aliquam arcu magna, fringilla quis fringilla eu, pellentesque ut nulla. Suspendisse sodales vel orci nec consequat. Morbi non mattis magna. Nullam venenatis vulputate aliquet. Sed pellentesque tristique arcu, ac blandit lacus. Sed interdum sagittis ligula, eu fringilla metus pharetra non. Nullam sodales est sit amet nulla tempus porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac urna ultricies, rhoncus purus vitae, placerat sem. Aenean quis posuere ipsum. Cras massa justo, lobortis a quam sed, lacinia condimentum augue. Sed eu porta sapien, vitae pharetra justo. </p>
-                </div>
+<p style="text-align:justify" >For the first time, the University of Ottawa and the Université du Québec en Outaouais are teaming up to participate in the Engineering Games.</p>
+<p style="text-align:justify">It's a five-day event bringing together over 500 engineering students from the 12 Quebec universities... and now UQOttawa! It's also the largest undergraduate engineering competition in Canada. Students have the chance to stand out in academic, sports, social and cultural competitions. Your body and mind will be put to the test. Surely, these will be five days you will not forget.</p>
+</p>                </div>
             </div>
 			
 			<div class ="row">
@@ -112,7 +118,7 @@
                         <div class="heading">
                             <h2>When?</h2>
                         </div>
-						<p>January 3rd to 7th, 2018</p>
+						<p>From January 3rd to 7th</p>
 					</div>
                 </div>
                 <div class="col-sm-4 col-sm-6">
@@ -131,7 +137,7 @@
                             <h2>Where?</h2>
                         </div>
 						<a class ="link2" href="https://www.google.ca/maps/place/Laval+University/@46.7817463,-71.2747424,15z/data=!4m5!3m4!1s0x0:0x15feb853bd2f8247!8m2!3d46.7817463!4d-71.2747424">
-                            <p>University Laval, Quebec City</p>
+                            <p>Laval University, Quebec City</p>
                         </a>
 					</div>
                 </div>
@@ -141,7 +147,7 @@
 			    </section>
 				
 		<section id="competitions" class="competitions bg-primary">
-		<div class="container">
+		<div class="container" style="padding-bottom: 25px">
 				<div class="col-lg-12">
 			 <div class="heading" > 
 					<h1>The competitions</h1>
@@ -150,42 +156,44 @@
                 <div class ="content">
                     <img src="img/machine.png">
                     <div class="heading">
-                        <h2>Machine Competition</h2>
+                        <h2>Robotic: Machine</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis euismod odio, sit amet mollis turpis molestie in. Proin convallis risus vel metus facilisis, nec pharetra leo scelerisque. Aliquam arcu magna, fringilla quis fringilla eu, pellentesque ut nulla. Suspendisse sodales vel orci nec consequat. Morbi non mattis magna. Nullam venenatis vulputate aliquet. Sed pellentesque tristique arcu, ac blandit lacus. Sed interdum sagittis ligula, eu fringilla metus pharetra non. Nullam sodales est sit amet nulla tempus porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac urna ultricies, rhoncus purus vitae, placerat sem. Aenean quis posuere ipsum. Cras massa justo, lobortis a quam sed, lacinia condimentum augue. Sed eu porta sapien, vitae pharetra justo. </p>
-                </div>
-            </div>
+                        <p style="text-align:justify; padding:15px">This is the main challenge of the Engineering Games. During the 4 months preceding the Games, each school has to design and create an autonomous and intelligent machine that will accomplish different tasks on a given course. Multidisciplinary teams have the opportunity to apply the skills they acquired throughout their degree. Once at the Games, these students in electrical, mechanical, computer, software engineering and other disciplines have the occasion to present their Machine to the public before challenging the other universities! The Machine competition is becoming more and more important every year and it is even broadcasted on television!</p> 
+					</div>
             <div class="row">
                 <div class ="content">
-                <img src="img/acedemic.png">
+                    <div>
+                        <img src="img/acedemic.png">
+                    </div>
                     <div class="heading">
-                        <h2>Acedemic Competition</h2>
+                        <h2>Academic competitions</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis euismod odio, sit amet mollis turpis molestie in. Proin convallis risus vel metus facilisis, nec pharetra leo scelerisque. Aliquam arcu magna, fringilla quis fringilla eu, pellentesque ut nulla. Suspendisse sodales vel orci nec consequat. Morbi non mattis magna. Nullam venenatis vulputate aliquet. Sed pellentesque tristique arcu, ac blandit lacus. Sed interdum sagittis ligula, eu fringilla metus pharetra non. Nullam sodales est sit amet nulla tempus porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac urna ultricies, rhoncus purus vitae, placerat sem. Aenean quis posuere ipsum. Cras massa justo, lobortis a quam sed, lacinia condimentum augue. Sed eu porta sapien, vitae pharetra justo. </p>
-                </div>
+					<p style="text-align:justify; padding:15px">During this day, all participants are put to the test and must solve various real world problems by  applying their theoretical and practical knowledge. Our contestants will have to stand out in all the fields : civil, chemical, electrical, industrial, software, mechanical engineering, and even consulting engineering! This competition is wrapped up with “La Majeure”, where our fellows have 3 hours to design a functional prototype, meeting various requirements and showing a good knowledge of all engineering disciplines.  It is critical to have students from various disciplines in our delegation since a lot of points are allocated during this day.</p>
+				</div>
             </div>
             <div class="row">
-                <div class ="content">
+                <div class ="content" >
                 <img src="img/Sports.png">
                     <div class="heading">
-                        <h2>Sport Competitions</h2>
+                        <h2>Sports competition</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis euismod odio, sit amet mollis turpis molestie in. Proin convallis risus vel metus facilisis, nec pharetra leo scelerisque. Aliquam arcu magna, fringilla quis fringilla eu, pellentesque ut nulla. Suspendisse sodales vel orci nec consequat. Morbi non mattis magna. Nullam venenatis vulputate aliquet. Sed pellentesque tristique arcu, ac blandit lacus. Sed interdum sagittis ligula, eu fringilla metus pharetra non. Nullam sodales est sit amet nulla tempus porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac urna ultricies, rhoncus purus vitae, placerat sem. Aenean quis posuere ipsum. Cras massa justo, lobortis a quam sed, lacinia condimentum augue. Sed eu porta sapien, vitae pharetra justo. </p>
-                </div>
+                    <p style="text-align:justify; padding:15px">This one involves various team sports and reminds our students the importance of a healthy lifestyle. It takes fitness, strategy and team spirit in order to win the series of tournaments put together by the Engineering Games Organising Committee every year.</p>
+					</div>
             </div>
             <div class="row">
                 <div class ="content">
                     <img src="img/culture.png">
-                    <div class="heading">
-                        <h2>Cultural Competitions</h2>
+                    <div class="heading"  style="margin-bottom: 0px">
+                    <div>
+                        <h2>Cultural competitions</h2>
                     </div>
-<div class ="row">
+			<div class ="row">
                 <div class="col-sm-4 col-sm-6">
                     <div class ="subcategory">
                         <div class="heading">
                             <h2>Debates</h2>
                         </div>
-						<p>Just like your girlfriend do so well</p>
+						<p style="text-align:justify">Each delegation chooses 2 members to represent them in a series of oral debates. They will then have to defend their opinion on various subjects approved by the Ordre des Ingénieurs du Québec to convince the judges, who are industry experts, to support them. Our debaters can choose to show off their communication skills and quick thinking in the official language they wish!</p>
 					</div>
                 </div>
                 <div class="col-sm-4 col-sm-6">
@@ -193,7 +201,8 @@
                         <div class="heading">
                             <h2>Improvisation</h2>
                         </div>
-						<p>Can you do it?</p>
+						<p style="text-align:justify">Teams from each school face each other in improvisation matches in front of hundreds of other students. Each match is supervised by a referee and follows the Ligue nationale d'improvisation (National improvisation league) rules. Our players must demonstrate creativity, rapidity and humor in order to stand out.</p>
+
 					</div>
                 </div>
 				 <div class="col-sm-4 col-sm-6">
@@ -201,10 +210,11 @@
                         <div class="heading">
                             <h2>Trivia</h2>
                         </div>
-						<p>Just like the good old Trivia Crack!</p>
+						<p style="text-align:justify">Just like in trivia TV shows, the students are tested on their general knowledge. Facing other teams one on one, they have to be fast as lightning and answer correctly the trivia questions they are asked.</p>
 					</div>
                 </div>
-            </div                </div>
+            </div>          
+			</div>
             </div>
 			</div>
 			</div>
@@ -214,15 +224,15 @@
 				<div class="container">
 				<div class="col-lg-12">
 				<div class="heading">
-						<h1>Participating Universities</h1>
+						<h1>Participating universities</h1>
 				</div>
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center"  style="padding-bottom: 25px">
                     <div class="school-card">
                         <img class="school" src="img/ets.png">
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center"  style="padding-bottom: 25px">
                     <div class="school-card">
                         <img class="school" src="img/poly.png">
                     </div>
@@ -268,17 +278,17 @@
                 </div>
             </div>
             <div class="row">
-				<div class="col-md-4 text-center">
+				<div class="col-md-4 text-center"  style="padding-bottom: 25px">
                     <div class="school-card">
 					      <img class="school" src="img/troisr.png">
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center" style="padding-bottom: 25px">
                     <div class="school-card">
                         <img class="school" src="img/uOttawa.png">
                     </div>
                 </div>
-				<div class="col-md-4 text-center">
+				<div class="col-md-4 text-center"  style="padding-bottom: 25px">
                     <div class="school-card">
                         <img class="school" src="img/UQO.jpg">
                     </div>
@@ -295,7 +305,7 @@
         <div class="container">
         <div class="col-lg-12">
             <div class="heading" > 
-                <h1>Our Executive Team</h1>
+                <h1>Our executive committee</h1>
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -303,7 +313,7 @@
                         <img class="card-img" src="img/Isa.png">
                         <div class="card-info">
                             <h1>Isa Murray</h1>
-                            <h3>President</h3>
+                            <h3>Head delegate</h3>
                             <p>Electrical Engineering</p>
                             <p>University of Ottawa</p>
                         </div>
@@ -312,10 +322,10 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img class="card-img" src="img/Olive.png">
-                        <div class="card-info">
-                            <h1>Olive Labranche</h1>
-                            <h3>Co-President</h3>
-                            <p></p>
+                        <div class="card-info card-info-bottom">
+                            <h1>Olivier Courchesne</h1>
+                            <h3>Co-chef de délégation</h3>
+                            <p>Electrical Engineering</p>
                             <p>Université du Québec en Outaouais</p>
                         </div>
                     </div>
@@ -325,7 +335,7 @@
                         <img class="card-img" src="img/Tyler.png">
                         <div class="card-info">
                             <h1>Tyler Metade</h1>
-                            <h3>VP Machine</h3>
+                            <h3>VP machine</h3>
                             <p>Software Engineering</p>
                             <p>University of Ottawa</p>
                         </div>
@@ -336,8 +346,8 @@
                         <img class="card-img" src="img/Seau.png">
                         <div class="card-info">
                             <h1>Sophie Bisson</h1>
-                            <h3>VP Social</h3>
-                            <p>BioMechanical Engineering</p>
+                            <h3>VP social</h3>
+                            <p>Biomedical Mechanical Engineering</p>
                             <p>University of Ottawa</p>
                         </div>
                     </div>
@@ -346,11 +356,11 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="card">
-                        <img class="card-img" src="img/exec-temp.png">
-                        <div class="card-info">
+                        <img class="card-img" src="img/Isabelle.png">
+                         <div class="card-info">
                             <h1>Isabelle Girard</h1>
-                            <h3>VP Internal</h3>
-                            <p>BioMechanical Engineering</p>
+                            <h3>VP internal</h3>
+                            <p>Biomedical Mechanical Engineering</p>
                             <p>University of Ottawa</p>
                         </div>
                     </div>
@@ -358,10 +368,10 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="card">
                         <img class="card-img" src="img/Steph.png">
-                        <div class=" card-info">
+                        <div class=" card-info -">
                             <h1>Stéphanie England</h1>
-                            <h3>VP Sponsor</h3>
-                            <p></p>
+                            <h3>VP logistic</h3>
+                            <p>Software Engineering</p>
                             <p>Université du Québec en Outaouais</p>
                         </div>
                     </div>
@@ -372,8 +382,8 @@
                         <div class="card-info">
                             <h1>James Fradette</h1>
                             <h3>Godfather</h3>
-                            <p></p>
-                            <p>Concordia University (Graduated - finally)</p>
+                            <p>Building Engineering</p>
+                            <p>Concordia University (Graduated)</p>
                         </div>
                     </div>
                 </div>
@@ -381,9 +391,9 @@
                     <div class="card">
                         <img class="card-img" src="img/Phil.png">
                         <div class="card-info">
-                            <h1>Phillippe Daneau</h1>
+                            <h1>Philippe Daneau</h1>
                             <h3>Godfather</h3>
-                            <p></p>
+                            <p>Software Engineering</p>
                             <p>Polytechnique</p>
                         </div>
                     </div>
@@ -399,7 +409,7 @@
         <div class="container">
             <div class="row">
                 <div class="heading">
-                    <h1>Delegation</h1>
+                    <h1>Our delegation</h1>
                 </div>
             </div>
             <!-- /.row -->
@@ -410,13 +420,22 @@
     <!--Sponsors-->
     <section id="sponsors" class="sponsors bg-primary">
         <div class="container">
+		<div class="col-lg-12">
             <div class="row">
                 <div class="heading">
-                    <h1>Sponsors</h1>
+                    <h1>Our sponsors</h1>
+					<div class ="content">
+					    <img src="img/sponsorship.png">
+						<p></p>
+						<p>Si vous êtes intéressé à nous commanditer de quelque manière que ce soit, n'hésitez pas à <a href="#contacts">contacter</a> nos chefs de délégation!</p>
+						<p>Vous pouvez aussi consulter nos <b>plans de commandite</b> (<a href="doc/Cahier de commandite.pdf">FR</a>/<a href="doc/Cahier de commandite_EN.pdf">EN</a>) pour davantage d'information.</p>
+
                 </div>
             </div>
+			</div>
             <!-- /.row -->
         </div>
+		</div>
         <!-- /.container -->
     </section>
 
@@ -427,13 +446,13 @@
         <section id="contacts" class="contacts">
             <div class="footer">
                 <div class="container">
+				  <div class="col-lg-12 sm-margin-bottom-40">
                     <div class="row">
                         <!-- Column 1 -->
-                        <div class="col-md-6 sm-margin-bottom-40">
-                            <h2>Useful Links</h2>
+                            <h2>Useful links</h2>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a class="link" href="http://jeuxdegenie.qc.ca/jdg/2017">Eng Game (Official Site)</a>
+                                    <a class="link" href="http://jeuxdegenie.qc.ca/jdg/2018">Engineering Games (Official website)</a>
                                 </li>
                                 <li>
                                     <a class="link" href="https://www.uottawa.ca">University of Ottawa</a>
@@ -444,19 +463,38 @@
                             </ul>
                         </div>
                         <!-- End column 1 -->
+						
                         <!-- Column 2 -->
-                        <div class="col-md-6 sm-margin-bottom-40">
-                            <h2>Contact Us</h2>
-							<h3><strong>Isa Murray</strong>
-							</h3>
-						<h4>Head delegate</h4>
-						<h4><i>Ottawa | Gatineau</i></h4>
-						<ul class="list-unstyled">
-							<li><i class="fa fa-phone fa-fw"></i> (514) 970-1241</li>
-							<li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:UQOttawaJDG@gmail.com">UQOttawaJDG@gmail.com</a>
-							</li>
-						</ul>
-                            
+           			<div class="row">
+
+							<h2>Contact us</h2>
+								<div class="col-md-6">
+								<h3><strong>Isa Murray</strong>
+								</h3>
+								<h4>Head delegate</h4>
+								<h4><i>uOttawa | Ottawa</i></h4>
+								<ul class="list-unstyled">
+										<li><i class="fa fa-phone fa-fw"></i> (514) 970-1241</li>
+										<li><i class="fa fa-envelope-o fa-fw"></i> <a class="link" href="mailto:UQOttawaJDG@gmail.com">UQOttawaJDG@gmail.com</a>
+									</li>
+								</ul>
+															</div>
+
+								<div class="col-md-6">
+									<h3><strong>Olivier Courchesne</strong>
+									</h3>
+								<h4>Head delegate</h4>
+								<h4><i>UQO | Gatineau</i></h4>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-phone fa-fw"></i> (819) 588-1254</li>
+									<li><i class="fa fa-envelope-o fa-fw"></i> <a class="link" href="mailto:UQOttawaJDG@gmail.com">UQOttawaJDG@gmail.com</a>
+									</li>
+								</ul>
+
+								</div>
+                        </div>
+						<!-- End column 2.2 -->
+	
                         </div>
                         <!-- End column 2 -->
                     </div>
