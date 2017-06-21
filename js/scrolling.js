@@ -9,9 +9,16 @@ $(document).ready(function(){
 		for (var i=0; i < aChildren.length; i++) {    
 			var aChild = aChildren[i];
 			var ahref = $(aChild).attr('href');
+			console.log(ahref);
 			aArray.push(ahref);
 		} // this for loop fills the aArray with attribute href values
+		/*aArray[0] = "home";
+		aArray[1] = "JDG";
+		aArray[2] = "team";
+		aArray[3] = "sponsors";
+		aArray[4] = "contacts";*/
 
+		
 
         $(window).scroll(function(){
         var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
