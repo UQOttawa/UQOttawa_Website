@@ -16,6 +16,11 @@ body {
     color: #fff;
 }
 
+.brand a:visited, a:active{
+	text-decoration: none;
+	
+}
+
 .text-header h1 {
     margin: 0;
     padding-top: 15px;
