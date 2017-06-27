@@ -44,8 +44,8 @@ body {
 }
 
 .header img {
-     max-width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     width: auto\9; /* ie8 */
 	position:center;
 }
@@ -71,6 +71,8 @@ body {
 	
 
 }
+
+
 @media(max-width:768px) {
 	.text-header{
 		display: table-cell;

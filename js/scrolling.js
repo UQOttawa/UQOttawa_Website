@@ -8,7 +8,7 @@ $(document).ready(function(){
 		var aArray = []; // create the empty aArray
 		for (var i=0; i < aChildren.length; i++) {    
 			var aChild = aChildren[i];
-			var ahref = $(aChild).attr('href');
+			var ahref = $(aChild).attr('title');
 			console.log(ahref);
 			aArray.push(ahref);
 		} // this for loop fills the aArray with attribute href values
