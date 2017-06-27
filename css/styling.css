@@ -223,6 +223,7 @@ body {
 .navbar-lang-icon{
     float:right;
     padding:10px;
+	margin-top: 9px;
 }
 
 .footer {
@@ -371,4 +372,8 @@ body {
 	a.nav-selected {
 		border-bottom: #1C7398 2px solid !important;
 	}
+}
+
+.navbar-toggle {
+	margin-top:17px !important;
 }
