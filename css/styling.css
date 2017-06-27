@@ -10,6 +10,7 @@ body {
 }
 
 @media (max-width: 991px) {
+	
   .navbar-header {
       float: none;
   }
@@ -51,6 +52,8 @@ body {
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
+	
+
 }
 
 @media (max-width: 339px) {
@@ -168,11 +171,7 @@ body {
 	width:auto;
 }
 
-a.nav-selected {
-    /*border-bottom: 2px solid #fff;*/
-	border-bottom: #1C7398 2px solid !important;
-	
-}
+
 
 .dropbtn {
     color: white;
@@ -358,4 +357,18 @@ a.nav-selected {
 }
 .logoTitle{
     margin: 18px;
+}
+
+@media (max-width: 991px) {
+	
+	a.nav-selected {
+		background-color:grey!important;
+	}
+}
+
+@media (min-width: 992px) {
+	
+	a.nav-selected {
+		border-bottom: #1C7398 2px solid !important;
+	}
 }
