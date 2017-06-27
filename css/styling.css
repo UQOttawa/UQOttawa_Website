@@ -9,6 +9,33 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+
+
+.nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
+  border-bottom: 3px solid transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  border-bottom: 3px solid transparent;
+  background: none;
+}
+.navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
+ color: #fff;
+ font-size:19px;
+}
+.dropdown-menu{
+      -webkit-box-shadow: none;
+    box-shadow:none;
+}
+
+/*.nav li:hover, .nav li.active{
+  border-bottom: #1C7398 3px solid;
+}*/
+
+.navbar-toggle .icon-bar{
+    color: #fff;
+    background: #fff;
+}
+
 .text-header{
     display: table-cell;
     text-align: center;
@@ -45,9 +72,10 @@ body {
 
 .header img {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
     width: auto\9; /* ie8 */
 	position:center;
+
 }
 .navbar-fixed-top .nav {
     padding: 10px 0;
@@ -73,36 +101,29 @@ body {
 }
 
 
-@media(max-width:768px) {
-	.text-header{
-		display: table-cell;
-		text-align: center;
-		vertical-align: top;
-		color: #fff;
-	}
-	
-   .text-header h1 {
-		padding-top: 10px;
-	   	padding-top: 72px;
-		margin: 0;
-		font-size: 1.5em;
-		font-weight: 450;
-		color: #fff;
-	}
+@media(min-height: :768px) {
+    body {
+        padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
 
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+    
 }
+
+
 
 .logo-img {
 	height: 60px;
 	width:auto;
 }
 
-a.nav-selected{
+a.nav-selected {
     /*border-bottom: 2px solid #fff;*/
-    padding-bottom: 1px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid
-
+ 
+	border-bottom: #1C7398 2px solid !important;
+	
 }
 
 .dropbtn {
@@ -112,8 +133,11 @@ a.nav-selected{
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    
-    display: inline-block;
+    display: inline;
+}
+
+.align{
+    text-align: center;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -279,4 +303,9 @@ a.nav-selected{
     text-align:center;
 	color: black;
 
+}
+
+.navbar-inverse .navbar-nav > .close > a:focus {
+  color: #fff;
+  background-color:grey;
 }
