@@ -363,8 +363,11 @@ body {
 @media (max-width: 991px) {
 	
 	a.nav-selected {
-		background-color:grey!important;
+		/*background-color:grey!important;*/
 	}
+	.content p {
+		text-align: center !important;
+}
 }
 
 @media (min-width: 992px) {
@@ -377,3 +380,4 @@ body {
 .navbar-toggle {
 	margin-top:17px !important;
 }
+

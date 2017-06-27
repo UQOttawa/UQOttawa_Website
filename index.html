@@ -70,14 +70,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="close-menu">
-                        <a href="#top" title ="#top">Accueil</a>
+                        <a href="#top" data-title ="#top">Accueil</a>
                     </li>
 
                     <li class="dropdown">
-                        <a href="#" title ="#JDG" class="dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" id="nav-main">Les Jeux<span class="caret"></span>
+                        <a href="#" data-title ="#JDG" class="dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" id="nav-main">Les Jeux<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="dropdown align close-menu">
+                                <a href="#JDG">À propos</a>
+                            </li><li class="dropdown align close-menu">
                                 <a href="#competitions">Compétitions</a>
                             </li>
                             <li class="dropdown align close-menu">
@@ -86,7 +88,7 @@
                         </ul>
                     </li> 
                     <li class="dropdown">
-                        <a href="#" title ="#team" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notre équipe<span class="caret"></span>
+                        <a href="#" data-title ="#team" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notre équipe<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="dropdown align close-menu">
@@ -98,10 +100,10 @@
                         </ul>
                     </li> 
                     <li class="close-menu">
-                        <a href="#sponsors" title ="#sponsors">Commanditaires</a>
+                        <a href="#sponsors" data-title ="#sponsors">Commanditaires</a>
                     </li>
 					 <li class="close-menu">
-                        <a href="#contacts" title ="#contacts">Nous contacter</a>
+                        <a href="#contacts" data-title ="#contacts">Nous contacter</a>
                     </li>
                 </ul>
             </div>
@@ -565,6 +567,14 @@
             });
         });
     </script>
+	<script>
+	$(function(){
+
+    $('*').tooltip({ track: true });
+
+    $('*[title]').tooltip('disable');
+	</script>
+});
 
 </body>
 
