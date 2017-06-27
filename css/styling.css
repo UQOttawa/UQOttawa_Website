@@ -44,6 +44,13 @@ body {
   .collapse.in{
       display:block !important;
   }
+   body {
+        padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
 }
 
 .nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
@@ -123,7 +130,7 @@ body {
 	
 }
 
-@media(min-width:768px) {
+@media(min-width:991px) {
     body {
         padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
@@ -135,7 +142,7 @@ body {
 
 }
 
-@media(min-height: :768px) {
+@media(min-height:991px) {
     body {
         padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
