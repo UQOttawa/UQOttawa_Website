@@ -8,27 +8,35 @@
 
 <url>
   <loc>http://uqottawa.ca/</loc>
-  <lastmod>2017-06-27T21:47:08+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2017-06-28T22:15:25+00:00</lastmod>
 </url>
 <url>
-  <loc>http://uqottawa.ca/index_en.html</loc>
-  <lastmod>2017-06-27T21:47:08+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://uqottawa.ca/en/</loc>
+  <lastmod>2017-06-28T22:15:25+00:00</lastmod>
 </url>
 <url>
   <loc>http://uqottawa.ca/doc/Plan_de_partenariat.pdf</loc>
-  <lastmod>2017-06-27T21:47:08+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2017-06-28T22:15:25+00:00</lastmod>
 </url>
 <url>
   <loc>http://uqottawa.ca/doc/Sponsorship_Package.pdf</loc>
-  <lastmod>2017-06-27T21:47:08+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2017-06-28T22:15:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://uqottawa.ca/index</loc>
+  <lastmod>2017-06-28T22:15:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://uqottawa.ca/en/index</loc>
+  <lastmod>2017-06-28T22:15:25+00:00</lastmod>
 </url>
 <url>
   <loc>http://uqottawa.ca/index.html</loc>
-  <lastmod>2017-06-27T21:47:08+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2017-06-28T22:15:25+00:00</lastmod>
 </url>
+<url>
+  <loc>http://uqottawa.ca/en/index.html</loc>
+  <lastmod>2017-06-28T22:15:25+00:00</lastmod>
+</url>
+
 </urlset>
