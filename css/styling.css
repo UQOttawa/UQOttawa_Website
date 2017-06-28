@@ -400,7 +400,7 @@ margin-top: 0px !important;
 
 .content img{
     margin-top: 20px;
-    width: 15%;
+    width: 11%;
     height:auto;
 }
 
@@ -468,5 +468,10 @@ margin-top: 0px !important;
 	.btn-sponsor {
 		  font-size: 18px !important;
 	}
+}
+
+
+.heading-subcat{
+	margin-top: 0px !important;
 }
 
