@@ -125,13 +125,47 @@ body {
     -o-background-size: cover;
 }
 
-.header img {
+.background-image {
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
 	position:center;
 
 }
+.btn-sponsor {
+  background: #bdad00;
+  background-image: -webkit-linear-gradient(top, #bdad00, #f0d805);
+  background-image: -moz-linear-gradient(top, #bdad00, #f0d805);
+  background-image: -ms-linear-gradient(top, #bdad00, #f0d805);
+  background-image: -o-linear-gradient(top, #bdad00, #f0d805);
+  background-image: linear-gradient(to bottom, #bdad00, #f0d805);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  border-color: rgba(0,0,0,0);
+  font-family: Arial;
+  color: #000000;
+  font-size: 22px;
+  padding: 6px 40px 6px 40px;
+  text-decoration: none;
+  vertical-align:top;
+  position:center;
+ -webkit-box-shadow: 2px 3px 5px #000;
+  -moz-box-shadow: 2px 3px 5px #000;
+  box-shadow: 2px 3px 5px #000;
+}
+
+.btn-sponsor:hover {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #f9f9f9);
+  background-image: -moz-linear-gradient(top, #3498db, #f9f9f9);
+  background-image: -ms-linear-gradient(top, #3498db, #f9f9f9);
+  background-image: -o-linear-gradient(top, #3498db, #f9f9f9);
+  background-image: linear-gradient(to bottom, #3498db, #f9f9f9);
+  text-decoration: none;
+}
+
+
 .navbar-fixed-top .nav {
     padding: 10px 0;
 	color: rgb(187, 142, 1);
@@ -368,6 +402,10 @@ body {
 	.content p {
 		text-align: center !important;
 }
+	.sponsor-title{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -375,9 +413,22 @@ body {
 	a.nav-selected {
 		border-bottom: #1C7398 2px solid !important;
 	}
+	
+	.sponsor-title{
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
 }
 
 .navbar-toggle {
 	margin-top:17px !important;
 }
+@media (max-width: 360px) {
+	
+	.btn-sponsor {
+		  font-size: 18px !important;
+	}
+}
+
+
 
