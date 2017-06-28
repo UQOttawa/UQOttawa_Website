@@ -97,7 +97,9 @@ body {
     vertical-align: top;
     color: #fff;
 }
-
+.background-pos{
+	    vertical-align: middle;	
+}
 .brand a:visited, a:active{
 	text-decoration: none;
 	
@@ -131,6 +133,7 @@ body {
     width: auto\9; /* ie8 */
 	position:center;
 
+
 }
 .btn-sponsor {
   background: #bdad00;
@@ -150,9 +153,9 @@ body {
   text-decoration: none;
   vertical-align:top;
   position:center;
- -webkit-box-shadow: 2px 3px 5px #000;
+ /*-webkit-box-shadow: 2px 3px 5px #000;
   -moz-box-shadow: 2px 3px 5px #000;
-  box-shadow: 2px 3px 5px #000;
+  box-shadow: 2px 3px 5px #000;*/
 }
 
 .btn-sponsor:hover {
