@@ -27,6 +27,7 @@ body {
   .navbar-fixed-top {
       top: 0;
       border-width: 0 0 1px;
+      box-shadow: 0px 2px 11px #000;
   }
   .navbar-collapse.collapse {
       display: none!important;
@@ -308,6 +309,9 @@ margin-top: 0px !important;
 	color: white;
 }
 
+.navbar{
+	box-shadow: 0px 2px 11px #000 !important;
+}
 .link{
     color: black;
 }
