@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="refresh" content="0;URL='http://uqottawa.ca/en'" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,22 +31,6 @@
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 	<script type="text/javascript" src="js/scrolling.js"></script>
-
-    <?php
-  $text = "index_en.html";  
- 
- $link = "http://uqottawa.ca/en";
-  
- $url = "http://uqottawa.ca/index_en.html";
- 
- echo"Re-write </br>".$url."<br/> to <br/>".$link."".pre_replace($text);
-
-        function pre_replace($var){
-             $variable = preg_replace('~[^-\w]+~', '-', $var);
-             $variable=trim($variable, "-"); 
-            return $variable;
-    }
-?>
 
 </head>
 
