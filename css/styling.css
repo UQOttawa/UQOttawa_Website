@@ -105,6 +105,12 @@ body {
 	
 }
 
+.sponsor-title a:visited, a:active{
+	text-decoration: none;
+	
+}
+
+
 .text-header h1 {
     margin: 0;
     padding-top: 15px;
@@ -399,8 +405,9 @@ margin-top: 0px !important;
 }
 
 .school-card{
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+	
 }
 
 .school{
@@ -425,6 +432,7 @@ margin-top: 0px !important;
 .logoTitle{
     margin: 18px;
 }
+
 
 @media (max-width: 991px) {
 	
