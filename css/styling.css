@@ -143,12 +143,12 @@ body {
 
 }
 .btn-sponsor {
-  background: #bdad00;
-  background-image: -webkit-linear-gradient(top, #bdad00, #f0d805);
-  background-image: -moz-linear-gradient(top, #bdad00, #f0d805);
-  background-image: -ms-linear-gradient(top, #bdad00, #f0d805);
-  background-image: -o-linear-gradient(top, #bdad00, #f0d805);
-  background-image: linear-gradient(to bottom, #bdad00, #f0d805);
+  background: #c39909;
+  background-image: -webkit-linear-gradient(top, #c39909, #F4BF0B);
+  background-image: -moz-linear-gradient(top, #c39909, #F4BF0B);
+  background-image: -ms-linear-gradient(top, #c39909, #F4BF0B);
+  background-image: -o-linear-gradient(top, #c39909, #F4BF0B);
+  background-image: linear-gradient(to bottom, #c39909, #F4BF0B);
   -webkit-border-radius: 12;
   -moz-border-radius: 12;
   border-radius: 12px;
@@ -166,13 +166,14 @@ body {
 }
 
 .btn-sponsor:hover {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #f9f9f9);
-  background-image: -moz-linear-gradient(top, #3498db, #f9f9f9);
-  background-image: -ms-linear-gradient(top, #3498db, #f9f9f9);
-  background-image: -o-linear-gradient(top, #3498db, #f9f9f9);
-  background-image: linear-gradient(to bottom, #3498db, #f9f9f9);
+  background: #1c7398;
+  background-image: -webkit-linear-gradient(top, #1c7398, #45B0DD);
+  background-image: -moz-linear-gradient(top, #1c7398, #45B0DD);
+  background-image: -ms-linear-gradient(top, #1c7398, #45B0DD);
+  background-image: -o-linear-gradient(top, #1c7398, #45B0DD);
+  background-image: linear-gradient(to bottom, #1c7398, #45B0DD);
   text-decoration: none;
+  color: black;
 }
 
 .btn-download {
@@ -459,7 +460,7 @@ margin-top: 0px !important;
 	}
 	
 	.sponsor-title{
-		padding-top: 20px;
+		padding-top: 30px;
 		padding-bottom: 15px;
 	}
 }
