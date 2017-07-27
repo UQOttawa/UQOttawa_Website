@@ -142,7 +142,7 @@ body {
 
 
 }
-.btn-sponsor {
+.btn-sponsor,  .btn-sponsor :active, .btn-sponsor:visited{
   background: #c39909;
   background-image: -webkit-linear-gradient(top, #c39909, #F4BF0B);
   background-image: -moz-linear-gradient(top, #c39909, #F4BF0B);
@@ -176,7 +176,7 @@ body {
   color: black;
 }
 
-.btn-download {
+.btn-download, .btn-download :active, .btn-download:visited {
   -webkit-border-radius: 12;
   -moz-border-radius: 12;
     border-radius: 12px;
@@ -480,3 +480,8 @@ margin-top: 0px !important;
 	margin-top: 0px !important;
 }
 
+.lettre {
+ width: 100% !important; 
+ height:100% !important;
+ border: 1px solid black ;
+}

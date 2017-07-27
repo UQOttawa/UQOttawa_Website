@@ -41,6 +41,17 @@
          ga('send', 'pageview');
 
     </script>
+	<script type="text/javascript">
+      <!--
+	  function toggle(id) {
+	  var e = document.getElementById(id);
+	  if(e.style.display == 'none')
+	  e.style.display = 'block';
+	  else
+	  e.style.display = 'none';
+	  }
+	  //-->
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -115,6 +126,13 @@
                             <p style="text-align:justify">L’Université d’Ottawa et l'Université du Québec en Outaouais s'unissent pour une toute <b>première fois</b> pour participer aux Jeux de Génie.</p>
                             <p style="text-align:justify">Depuis maintenant 28 ans, les Jeux de Génie rassemblent annuellement <b>500 étudiants</b> de tous les domaines du génie. Il s'agit de plus de <b>12 universités</b> québécoises… et maintenant <b>UQOttawa</b>! Les étudiants ont la chance de se démarquer dans des compétitions académique, sportive, sociale et culturelle. Ce sont <b>4 jours</b> durant lesquels le corps et l'esprit sont mis à rude épreuve, mais 4 jours que personne n'est prêt d’oublier!</p>
                             <p></p>
+							<div onclick="toggle('lettre')";>
+								<p><b>Lettre du Doyen : </b><img src="img/Doyen_lettre_support.jpg"></p>
+							</div>
+							<div style="display:none" id="lettre" onclick="toggle('lettre')";>
+								<img  class="lettre" src="img/Doyen_lettre_support.jpg">
+							</div>
+							
                         </div>
                     </div>
                     <div class="row">
@@ -399,9 +417,9 @@
                             <img src="img/sponsorship.png">
                             <p></p>
                             <p>Si vous êtes intéressé à nous commanditer de quelque manière que ce soit, n'hésitez pas à <a href="#contacts">contacter</a> nos chefs de délégation!</p>
-                            <p>Vous pouvez aussi consulter notre <b>plan de partenariat</b> (<a href="doc/Plan_de_partenariat.pdf" target="_blank">FR</a>/<a href="doc/Sponsorship_Package.pdf" target="_blank">EN</a>) pour davantage d'information.</p>
+                            <p>Vous pouvez aussi consulter notre <b>plan de partenariat</b> (<a href="doc/UQOttawa_Plan_de_partenariat.pdf" target="_blank">FR</a>/<a href="doc/UQOttawa_Sponsorship_Package.pdf" target="_blank">EN</a>) pour davantage d'information.</p>
                             <div class="download-pack">
-                                <a class="btn-download" href="doc/Plan_de_partenariat.pdf" target="_blank">Plan de partenariat <img src="img/download_arrow.png"></a><a class="btn-download" href="doc/Sponsorship_Package.pdf" target="_blank">Sponsorship package<img src="img/download_arrow.png"></a>
+                                <a class="btn-download" href="doc/UQOttawa_Plan_de_partenariat.pdf" target="_blank">Plan de partenariat <img src="img/download_arrow.png"></a><a class="btn-download" href="doc/UQOttawa_Sponsorship_Package.pdf" target="_blank">Sponsorship package<img src="img/download_arrow.png"></a>
                             </div>
                         </div>
                     </div>
