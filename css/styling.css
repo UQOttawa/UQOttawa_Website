@@ -480,14 +480,15 @@ margin-top: 0px !important;
 	margin-top: 0px !important;
 }
 
-
-.center-boxes{
-  margin:0 -4% 0 4%;
-}
-
 .lettre {
  width: 100% !important; 
  height:100% !important;
  border: 1px solid black ;
+}
+
+@media (min-width: 970px) {
+.center-boxes{
+  margin:0 -4% 0 4%;
+  }
 }
 
