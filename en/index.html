@@ -30,11 +30,22 @@
     </script>
     <script src="../js/scrolling.js" type="text/javascript">
     </script>
+	<script type="text/javascript">
+      <!--
+	  function toggle(id) {
+	  var e = document.getElementById(id);
+	  if(e.style.display == 'none')
+	  e.style.display = 'block';
+	  else
+	  e.style.display = 'none';
+	  }
+	  //-->
+    </script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="nav" role="navigation">
-        <a class="navbar-lang-icon" href="index.html"><img alt="" class="lang-img" src="../img/fr4.png"></a>
+        <a class="navbar-lang-icon" href="../index.html"><img alt="" class="lang-img" src="../img/fr4.png"></a>
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -106,6 +117,12 @@
                             <p style="text-align:justify">For the <b>first time</b>, the University of Ottawa and the Université du Québec en Outaouais are teaming up to participate in the Engineering Games.</p>
                             <p style="text-align:justify">It's a <b>four-day event</b> bringing together over <b>500 engineering students</b> from the <b>12 Quebec universities</b>... and now <b>UQOttawa</b>! It's also the largest undergraduate engineering competition in Canada. Students have the chance to stand out in academic, sports, social and cultural competitions. Your body and mind will be put to the test. Surely, these will be four days you will not forget.</p>
                             <p></p>
+							<div onclick="toggle('lettre')";>
+								<p><b>Letter from the Dean : </b><img src="../img/Dean_support_letter.jpg"></p>
+							</div>
+							<div style="display:none" id="lettre" onclick="toggle('lettre')";>
+								<img  class="lettre" src="../img/Dean_support_letter.jpg">
+							</div>
                         </div>
                     </div>
                     <div class="row">
@@ -242,7 +259,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4 text-center">
-                            <div class="school-card"><img class="school" src="../img/UQO.jpg"></div>
+                            <div class="school-card"><img class="school" src="../img/UQO.png"></div>
                         </div>
                         <div class="col-md-4 text-center">
                             <div class="school-card"><img class="school" src="../img/conco.png"></div>
@@ -414,9 +431,9 @@
                             <img src="../img/sponsorship.png">
                             <p></p>
                             <p>If you are interested in sponsoring us in any way, don’t hesitate to <a href="#contacts">contact</a> our delegation leaders!</p>
-                            <p>You can also take a look at our <b>sponsorship package</b> (<a href="../doc/Plan_de_partenariat.pdf" target="_blank">FR</a>/<a href="../doc/Sponsorship_Package.pdf" target="_blank">EN</a>) for more information.</p>
+                            <p>You can also take a look at our <b>sponsorship package</b> (<a href="../doc/UQOttawa_Plan_de_partenariat.pdf" target="_blank">FR</a>/<a href="../doc/UQOttawa_Sponsorship_Package.pdf" target="_blank">EN</a>) for more information.</p>
                             <div class="download-pack">
-                                <a class="btn-download" href="../doc/Sponsorship_Package.pdf" target="_blank">Sponsorship package<img src="../img/download_arrow.png"></a><a class="btn-download" href="../doc/Plan_de_partenariat.pdf" target="_blank">Plan de partenariat <img src="../img/download_arrow.png"></a>
+                                <a class="btn-download" href="../doc/UQOttawa_Sponsorship_Package.pdf" target="_blank">Sponsorship package<img src="../img/download_arrow.png"></a><a class="btn-download" href="../doc/UQOttawa_Plan_de_partenariat.pdf" target="_blank">Plan de partenariat <img src="../img/download_arrow.png"></a>
                             </div>
                         </div>
                     </div>
@@ -478,10 +495,10 @@
             </div>
         </section>
     </footer><!-- jQuery -->
-    <script src="js/jquery.js">
+    <script src="../js/jquery.js">
     </script> <!-- Bootstrap Core JavaScript -->
      
-    <script src="js/bootstrap.min.js">
+    <script src="../js/bootstrap.min.js">
     </script> <!-- Custom Theme JavaScript -->
      
     <script>

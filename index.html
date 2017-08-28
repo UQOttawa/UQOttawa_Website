@@ -41,11 +41,22 @@
          ga('send', 'pageview');
 
     </script>
+	<script type="text/javascript">
+      <!--
+	  function toggle(id) {
+	  var e = document.getElementById(id);
+	  if(e.style.display == 'none')
+	  e.style.display = 'block';
+	  else
+	  e.style.display = 'none';
+	  }
+	  //-->
+    </script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="nav" role="navigation">
-        <a class="navbar-lang-icon" href="/en"><img alt="" class="lang-img" src="img/en4.png"></a>
+        <a class="navbar-lang-icon" href="en/index.html"><img alt="" class="lang-img" src="img/en4.png"></a>
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -115,6 +126,13 @@
                             <p style="text-align:justify">L’Université d’Ottawa et l'Université du Québec en Outaouais s'unissent pour une toute <b>première fois</b> pour participer aux Jeux de Génie.</p>
                             <p style="text-align:justify">Depuis maintenant 28 ans, les Jeux de Génie rassemblent annuellement <b>500 étudiants</b> de tous les domaines du génie. Il s'agit de plus de <b>12 universités</b> québécoises… et maintenant <b>UQOttawa</b>! Les étudiants ont la chance de se démarquer dans des compétitions académique, sportive, sociale et culturelle. Ce sont <b>4 jours</b> durant lesquels le corps et l'esprit sont mis à rude épreuve, mais 4 jours que personne n'est prêt d’oublier!</p>
                             <p></p>
+							<div onclick="toggle('lettre')";>
+								<p><b>Lettre du Doyen : </b><img src="img/Doyen_lettre_support.jpg"></p>
+							</div>
+							<div style="display:none" id="lettre" onclick="toggle('lettre')";>
+								<img  class="lettre" src="img/Doyen_lettre_support.jpg">
+							</div>
+							
                         </div>
                     </div>
                     <div class="row">
@@ -251,7 +269,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4 text-center">
-                            <div class="school-card"><img class="school" src="img/UQO.jpg"></div>
+                            <div class="school-card"><img class="school" src="img/UQO.png"></div>
                         </div>
                         <div class="col-md-4 text-center">
                             <div class="school-card"><img class="school" src="img/conco.png"></div>
@@ -300,8 +318,12 @@
                             <div class="card">
                                  <img class="card-img" src="img/Olive.png">
                                 <div class="card-info card-info-bottom">
+<<<<<<< HEAD
                                     <h1>Olivier </h1>
                                     <h1>Courchesne</h1>
+=======
+                                    <h1>Olivier Courchesne</h1>
+>>>>>>> 500a17038c1fbea7b1dd38ba7cdbc83fe14433b4
                                     <h3>Chef de délégation</h3>
                                     <p>Génie électrique</p>
                                     <p>Université du Québec en Outaouais</p>
@@ -423,9 +445,9 @@
                             <img src="img/sponsorship.png">
                             <p></p>
                             <p>Si vous êtes intéressé à nous commanditer de quelque manière que ce soit, n'hésitez pas à <a href="#contacts">contacter</a> nos chefs de délégation!</p>
-                            <p>Vous pouvez aussi consulter notre <b>plan de partenariat</b> (<a href="doc/Plan_de_partenariat.pdf" target="_blank">FR</a>/<a href="doc/Sponsorship_Package.pdf" target="_blank">EN</a>) pour davantage d'information.</p>
+                            <p>Vous pouvez aussi consulter notre <b>plan de partenariat</b> (<a href="doc/UQOttawa_Plan_de_partenariat.pdf" target="_blank">FR</a>/<a href="doc/UQOttawa_Sponsorship_Package.pdf" target="_blank">EN</a>) pour davantage d'information.</p>
                             <div class="download-pack">
-                                <a class="btn-download" href="doc/Plan_de_partenariat.pdf" target="_blank">Plan de partenariat <img src="img/download_arrow.png"></a><a class="btn-download" href="doc/Sponsorship_Package.pdf" target="_blank">Sponsorship package<img src="img/download_arrow.png"></a>
+                                <a class="btn-download" href="doc/UQOttawa_Plan_de_partenariat.pdf" target="_blank">Plan de partenariat <img src="img/download_arrow.png"></a><a class="btn-download" href="doc/UQOttawa_Sponsorship_Package.pdf" target="_blank">Sponsorship package<img src="img/download_arrow.png"></a>
                             </div>
                         </div>
                     </div>
@@ -469,7 +491,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h3><strong>Olivier Courchesne</strong></h3>
-                                <h4>Co-chef de délégation</h4>
+                                <h4>Chef de délégation</h4>
                                 <h4><i>UQO | Gatineau</i></h4>
                                 <ul class="list-unstyled">
                                     <li><i class="fa fa-phone fa-fw"></i> (819) 588-1254</li>
