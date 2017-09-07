@@ -485,3 +485,11 @@ margin-top: 0px !important;
  height:100% !important;
  border: 1px solid black ;
 }
+
+.sponsor-logo {
+	padding: 5px;
+    text-align: center;
+    max-width:100%;
+    width:250px !important;
+    border-radius: 5px;
+}
