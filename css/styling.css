@@ -54,8 +54,13 @@ body {
         padding: 15px 0;
     }
 	
+	.director-logo{
+		width: 100% !important;
+	}
+	
 
 }
+
 
 @media (max-width: 339px) {
 	.navbar-toggle{
@@ -451,6 +456,8 @@ margin-top: 0px !important;
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
+	
+
 }
 
 @media (min-width: 992px) {
@@ -463,6 +470,7 @@ margin-top: 0px !important;
 		padding-top: 30px;
 		padding-bottom: 15px;
 	}
+	
 }
 
 .navbar-toggle {
@@ -500,4 +508,14 @@ margin-top: 0px !important;
   }
 }
 
->>>>>>> def1596b4a8978bb707c9409b534237b90d7b2ef
+@media (min-width: 550px) {
+.director-logo{
+	width: 75% !important;
+  }
+}
+
+@media (min-width: 992px) {
+.director-logo{
+	width: 50% !important;
+  }
+}
