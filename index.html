@@ -43,7 +43,7 @@
 
     </script>
 	<script type="text/javascript">
-      <!--
+      
 	  function toggle(id) {
 	  var e = document.getElementById(id);
 	  if(e.style.display == 'none')
@@ -51,7 +51,7 @@
 	  else
 	  e.style.display = 'none';
 	  }
-	  //-->
+	  
     </script>
 </head>
 <body>
@@ -130,27 +130,26 @@
                             <p style="text-align:justify">Depuis maintenant 28 ans, les Jeux de Génie rassemblent annuellement <b>500 étudiants</b> de tous les domaines du génie. Il s'agit de plus de <b>12 universités</b> québécoises… et maintenant <b>UQOttawa</b>! Les étudiants ont la chance de se démarquer dans des compétitions académique, sportive, sociale et culturelle. Ce sont <b>4 jours</b> durant lesquels le corps et l'esprit sont mis à rude épreuve, mais 4 jours que personne n'est prêt d’oublier!</p>
                             <p></p>
                             <p><b>Lettre du Doyen : </b></p>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-6 col-md-offset-3">
-                                    <a href="img/Doyen_lettre_support.jpg" data-lightbox="image-1">
-                                        <img class="lettre" src="img/Doyen_lettre_support.jpg">
-                                    </a>
-                                    <p>Université d'Ottawa</p>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <a href="img/Doyen_lettre_UQO.jpg" data-lightbox="image-1">
-                                        <img class="lettre" src="img/Doyen_lettre_UQO.jpg">
-                                    </a>
-                                    <p>Université du Québec en Outaouais</p>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-md-offset-3">
+                                <div onclick="toggle('lettre')";>
+                                    <img class="letter-icon" src="img/Dean_support_letter.jpg">
+                                    <p><b>Université d’Ottawa </b></p>
                                 </div>
                             </div>
-							<div style="display:none" id="lettre" onclick="toggle('lettre')";>
-								<img  class="lettre" src="img/Doyen_lettre_support.jpg">
-							</div>
-                            <div style="display:none" id="lettreUQO" onclick="toggle('lettreUQO')";>
-                                <img  class="lettre" src="img/Doyen_lettre_UQO.jpg">
+                            <div class="col-md-3 col-sm-6">
+                                <div onclick="toggle('lettreUQO')";>
+                                    <img class="letter-icon" src="img/doyen_lettre_UQO.jpg">
+                                    <p><b>Université du Québec en Outaouais </b></p>
+                                </div>
+                                
                             </div>
-							
+                        </div>
+                        <div style="display:none" id="lettre" onclick="toggle('lettre')";> 
+                            <img  class="lettre" src="img/doyen_lettre_support.jpg">
+                        </div>
+                        <div style="display:none" id="lettreUQO" onclick="toggle('lettreUQO')";>
+                            <img  class="lettre" src="img/doyen_lettre_UQO.jpg">
                         </div>
                     </div>
                     <div class="row">
@@ -576,6 +575,15 @@
 
        $('*[title]').tooltip('disable');
        });
+    </script>
+    <script>
+        lightbox.option({
+          'positionFromTop': 25,
+          'showImageNumberLabel':false,
+          'fitImagesInViewport':false,
+          'maxWidth':1000,
+          'maxHeight':1000
+        })
     </script>
 </body>
 </html>
