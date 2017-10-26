@@ -524,3 +524,15 @@ margin-top: 0px !important;
   width:50% !important;
   height:auto;
 }
+
+.gold-sponsor{
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.garnet-sponsor{
+  width: 20%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
