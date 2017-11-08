@@ -494,13 +494,6 @@ margin-top: 0px !important;
  border: 1px solid black ;
 }
 
-.sponsor-logo {
-	padding: 5px;
-    text-align: center;
-    max-width:100%;
-    width:250px !important;
-    border-radius: 5px;
-}
 
 @media (min-width: 970px) {
 .center-boxes{
@@ -512,6 +505,7 @@ margin-top: 0px !important;
 .director-logo{
 	width: 75% !important;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -526,9 +520,17 @@ margin-top: 0px !important;
 }
 
 .gold-sponsor{
-  width: 80%;
+  width: auto;
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
+  max-width: 80%;
+}
+
+.silver-sponsor{
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 40%;
 }
 
 .garnet-sponsor{
