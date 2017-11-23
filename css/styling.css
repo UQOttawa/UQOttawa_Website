@@ -347,35 +347,64 @@ margin-top: 0px !important;
 }
 
 .card{
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(255,255,255,0.6);
     margin-bottom:10px;
     border-radius: 15px;
+}
 
+.card-dark{
+  padding: 10px;
+  background-color: rgba(151,0,31,0.6);
+  margin-bottom:10px;
+  border-radius: 15px;
 }
 
 .card-img{
-    width:100%;
-    height:auto;
+  width:100%;
+  height:auto;
 }
 
 .card-info{
-    height: 230px;
-    text-align: center;
-	
+  height: 230px;
+  text-align: center;
+}
+
+.card-info-delegation{
+  height: 200px;
+  text-align: center;
 }
 
 .card-info h1{
 	color: black;
 	padding-top: 2px;
 	margin-bottom: 0px;
-    margin-top: 0px;
-
+  margin-top: 0px;
 }
 
 .card-info h3{
-    margin-top: 20px;
-    color:black;
+  margin-top: 20px;
+  color:black;
+}
+
+.card-info p{
+  margin-top: 15px;
+}
+
+.card-info-delegation h1{
+  color: black;
+  padding-top: 2px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.card-info-delegation h3{
+  margin-top: 20px;
+  color:black;
+}
+
+.card-info-delegation p{
+  margin-top: 15px;
 }
 
 .brand{
@@ -523,7 +552,15 @@ margin-top: 0px !important;
   width: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  max-width: 80%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .gold-sponsor{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 70% !important;
+  }
 }
 
 .silver-sponsor{
